@@ -1,0 +1,82 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B8;
+    --sm: 12px;
+    --md: 16px;
+    --lg: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.login{
+    max-width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.containerForm{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    width: 150px;
+}
+.title{
+    margin: 80px 0 0 0;
+    text-align: center;
+    font-size: var(--lg);
+}
+.text{
+    margin: 10px 0 0 0;
+    width: 340px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(98, 98, 98);
+}
+.containerIcon{
+    background-color:var(--text-input-field) ;
+    margin: 30px 0 0 0;
+    border-radius: 50%;
+}
+.icon2{
+    padding: 43px 30px 43px 30px;
+    
+}
+.btnPrimary{
+    width: 330px;
+    margin: 40px 0 0 0;
+    border-radius: 8px;
+    height: 60px;
+    border: none;
+    background-color: var(--hospital-green);
+    color: var(--white);
+    font-size: var(--lg);
+    cursor: pointer;
+}
+.containerText{
+    margin: 30px 0 0 0;
+    font-size: var(--sm);
+}
+.receiveEmail{
+    color: rgb(98, 98, 98);
+}
+.resend{
+    text-decoration: none;
+    color: var(--hospital-green);
+}
+@media (min-width: 640px){
+    .icon{
+        display: none;
+    }
+}

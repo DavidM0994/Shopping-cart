@@ -1,0 +1,108 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B8;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    place-items: center;
+    height: auto;
+}
+.containerMain{
+    width: 350px;
+}
+.containerMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px 0 rgb(198, 198, 198);
+}
+.iconFlechita{
+    display: none;
+}
+.containerMenu h2{
+    font-size: var(--lg);
+}
+.ContainerCrads{
+    padding: 20px 20px;
+}
+.Cards{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 0 25px 0;
+}
+.procuct{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.articles{
+    font-size: var(--sm);
+    color: rgb(148, 148, 148);
+    margin: 0 0 0 10px;
+    width: 100px;
+}
+.payItem{
+    margin: 0 0 0 10px;
+}
+.containerBuys--date{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-input-field);
+    width: 310px;
+    margin: 0 0 0 20px;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.date, .pay{
+    font-size: var(--md);
+    font-weight: bold;
+}
+button{
+    width: 310px;
+    margin: 20px 20px 30px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--hospital-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--lg);
+}
+@media (min-width: 640px){
+    body{
+        place-items: end;
+    }
+    .iconMenu{
+        display: none;
+    }
+    .containerMenu{
+        justify-content: start;
+        box-shadow: none;
+    }
+    .containerMenu h2{
+        margin: 0 0 0 50px;
+    }
+    .iconFlechita{
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+    
+}
