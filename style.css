@@ -17,6 +17,8 @@
 }
 body{
     font-family: 'Quicksand', sans-serif;
+    display: grid;
+    place-items: center;
 }
 /* --------------------------------------------------------------hearder-------------------------------------------------------------- */
 nav{
@@ -25,7 +27,7 @@ nav{
     align-items: center;
     padding: 15px 50px;
     box-shadow: 0 0 4px 0 gray;
-    width: 1318px;
+    width: 1366px;
     position: relative;
 }
 .menuDesplegable{
@@ -39,6 +41,7 @@ nav{
     justify-content: start;
     align-items: center;
     width: 600px;
+    
 }
 .allMenu a{
     border: 1px solid var(--hospital-green);
@@ -94,12 +97,13 @@ nav{
     height: auto;
     padding: 20px 30px 20px 10px;
     text-align: end;
-    box-shadow: 0px 0px 4px 0 gray;
+    box-shadow: 0px 0px 2px 0 gray;
     margin: 10px;
     border-radius: 5px;
     position: absolute;
     top: 61px;
     right: 160px;
+    background-color: var(--white);
 }
 .movilMenu{
     display: none;
@@ -125,12 +129,82 @@ nav{
     font-weight: bold;
     padding: 0 10px 0 0;
 }
+/* ----------------------------------aside-carrito de compras- movile------------------------------------------------------------- */
+.containerMain{
+    width: 350px;
+    box-shadow: 0 0 2px 0 gray;
+    padding: 20px 0;
+}
+.containerMenu{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.iconFlechita{
+    display: none;
+}
+.containerMenu h2{
+    font-size: var(--lg);
+}
+.ContainerCrads{
+    padding: 20px 20px;
+}
+.Cards{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 0 25px 0;
+}
+.procuct{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.articles{
+    font-size: var(--sm);
+    color: rgb(148, 148, 148);
+    margin: 0 0 0 10px;
+    width: 100px;
+}
+.payItem{
+    margin: 0 0 0 10px;
+}
+.containerBuys--date{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-input-field);
+    width: 310px;
+    margin: 0 0 0 20px;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.date, .pay{
+    font-size: var(--md);
+    font-weight: bold;
+}
+button{
+    width: 310px;
+    margin: 20px 20px 30px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--hospital-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--lg);
+}
 /* ---------------------------------mediaquery-movile------------------------------------------------------------------ */
 @media (max-width: 640px){
     body{
         display: grid;
         place-items: center;
     }
+    /* --------------------------------navbar-------------------------------------------------- */
     nav{
         width: 350px;
         padding: 15px 0px;
@@ -139,6 +213,7 @@ nav{
     }
     .movilMenu{
         display: block;
+        background-color: var(--white);
     }
     .menuDesplegable{
         display: block;
@@ -177,7 +252,7 @@ nav{
         border-radius: 5px;
         padding: 0 40px 0 40px;
         position: absolute;
-        box-shadow: 0 0 4px 0 gray;
+        box-shadow: 0 0 2px 0 gray;
         top: 66px;
     }
     .movilMenu img{
@@ -218,4 +293,35 @@ nav{
         font-weight: bold;
     }   
 }
-
+/* ----------------------------------aside- desktop-carrito de compras- deshtop------------------------------------------------------------- */
+@media (min-width: 640px){
+    .container_cart{
+        width: 1366px;
+        display: grid;
+        place-items: end;
+        background-color: var(--white);
+    }
+    .inactive{
+        display: none;
+    }
+    .containerMain{
+        padding: 20px 0;
+        box-shadow: 0 0 2px 0 gray;
+        margin: 1px 0 0 0;
+    }
+    .iconMenu{
+        display: none;
+    }
+    .containerMenu{
+        justify-content: start;
+        box-shadow: none;
+    }
+    .containerMenu h2{
+        margin: 0 0 0 50px;
+    }
+    .iconFlechita{
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+    
+}
