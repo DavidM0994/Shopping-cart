@@ -10,57 +10,59 @@
     <title>Shopping cart</title>
 </head>
 <body>
-    <!-- ----------------------------------------------nav--------------------------------------------------------- -->
-    <nav>
-        <!-- ----------------------------menu movil--------------------------------- -->
-        <div class="menuDesplegable">
-            <a href="#"><img src="./icons/icon_menu.svg" alt=""></a>
-        </div>
-        <div class="movilMenu inactive">
-            <img src="./icons/icon_close.png" alt="">
-            <ul class="containerMenu--categories">
-                <li class="itemMovil itemOneMovile"><a href="#">CATEGORIES</a></li>
-                <li class="itemMovil itemTwoMovile"><a href="#">All</a></li>
-                <li class="itemMovil itemTreeMovil"><a href="#">Clothes</a></li>
-                <li class="itemMovil itemFour"><a href="#">Electronics</a></li>
-                <li class="itemMovil itemFive"><a href="#">Furnitures</a></li>
-                <li class="itemMovil itemSix"><a href="#">Toys</a></li>
-                <li class="itemMovil itemSeven"><a href="#">Others</a></li>
+    <!-- ----------------------------------------------header--------------------------------------------------------- -->
+    <header>
+        <nav>
+            <!-- ----------------------------menu movil--------------------------------- -->
+            <div class="menuDesplegable">
+                <a href="#"><img src="./icons/icon_menu.svg" alt=""></a>
+            </div>
+            <div class="movilMenu inactive">
+                <img src="./icons/icon_close.png" alt="">
+                <ul class="containerMenu--categories">
+                    <li class="itemMovil itemOneMovile"><a href="#">CATEGORIES</a></li>
+                    <li class="itemMovil itemTwoMovile"><a href="#">All</a></li>
+                    <li class="itemMovil itemTreeMovil"><a href="#">Clothes</a></li>
+                    <li class="itemMovil itemFour"><a href="#">Electronics</a></li>
+                    <li class="itemMovil itemFive"><a href="#">Furnitures</a></li>
+                    <li class="itemMovil itemSix"><a href="#">Toys</a></li>
+                    <li class="itemMovil itemSeven"><a href="#">Others</a></li>
+                </ul>
+                <ul class="containerMenu--account">
+                    <li class="itemMovil itemEigth"><a href="#">My orders</a></li>
+                    <li class="itemMovil itemNine"><a href="#">My account</a></li>
+                </ul>
+                <ul class="containerMenu--email">
+                    <li class="itemTen"><a href="#">jorgemart94@gmail.com</a></li>
+                    <li class="itemEleven"><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+            <!-- ----------------------------nav----------------------------------------- -->
+            <div class="logo">
+                <a href="#"><img src="./logos/logo_yard_sale.svg" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li class="allMenu otherMenu"><a href="#">All</a></li>
+                <li class="otherMenu"><a href="#">Clothes</a></li>
+                <li class="otherMenu"><a href="#">Electronics</a></li>
+                <li class="otherMenu"><a href="#">Furniture</a></li>
+                <li class="otherMenu"><a href="#">Toys</a></li>
+                <li class="otherMenu"><a href="#">Others</a></li>
             </ul>
-            <ul class="containerMenu--account">
-                <li class="itemMovil itemEigth"><a href="#">My orders</a></li>
-                <li class="itemMovil itemNine"><a href="#">My account</a></li>
-            </ul>
-            <ul class="containerMenu--email">
-                <li class="itemTen"><a href="#">jorgemart94@gmail.com</a></li>
-                <li class="itemEleven"><a href="#">Sign out</a></li>
-            </ul>
-        </div>
-        <!-- ----------------------------nav----------------------------------------- -->
-        <div class="logo">
-            <a href="#"><img src="./logos/logo_yard_sale.svg" alt=""></a>
-        </div>
-        <ul class="menu">
-            <li class="allMenu otherMenu"><a href="#">All</a></li>
-            <li class="otherMenu"><a href="#">Clothes</a></li>
-            <li class="otherMenu"><a href="#">Electronics</a></li>
-            <li class="otherMenu"><a href="#">Furniture</a></li>
-            <li class="otherMenu"><a href="#">Toys</a></li>
-            <li class="otherMenu"><a href="#">Others</a></li>
-        </ul>
-        <div class="shopping">
-            <li class="email"><a href="#">jorgemart94@gmail.com<img src="./icons/flechita.svg" alt=""></a></li>
-            <li class="carrito"><a href="#"><img src="./icons/icon_shopping_cart_notification.svg" alt=""><span>3</span></a></li>
-        </div>
-        <!-- -------------------menu desktop------------------------------------ -->
-        <div class="containerToggler">
-            <ul class="desktopMenu inactive">
-                <li class="item itemOne"><a href="#">My orders</a></li>
-                <li class="item itemTwo"><a href="#">My account</a></li>
-                <li class="itemTree"><a href="#">Sign out</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="shopping">
+                <li class="email"><a href="#">jorgemart94@gmail.com<img src="./icons/flechita.svg" alt=""></a></li>
+                <li class="carrito"><a href="#"><img src="./icons/icon_shopping_cart_notification.svg" alt=""><span>3</span></a></li>
+            </div>
+            <!-- -------------------menu desktop------------------------------------ -->
+            <div class="containerToggler">
+                <ul class="desktopMenu inactive">
+                    <li class="item itemOne"><a href="#">My orders</a></li>
+                    <li class="item itemTwo"><a href="#">My account</a></li>
+                    <li class="itemTree"><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- -------------------------------------------------aside carrito-------------------------------------------------------- -->
     <aside class="container_cart">
         <section class="containerMain inactive">
@@ -92,7 +94,24 @@
             <button>Checkout</button>
         </section>
     </aside>
-
+    <!-- -----------------------------------------------------main------------------------------------------------------------------------ -->
+    <main>
+        <section class="ContainerMain_main">
+            <div class="ContainerCrads_main">
+                <!-- <div class="Cards_main">
+                    <img src="https://cdn.pixabay.com/photo/2020/08/25/18/28/workplace-5517744_1280.jpg" alt="">
+                    <div class="containerInformation--product_main">
+                        <div class="container--description_main">
+                            <h2>$ 120,00</h2>
+                            <p>Desk</p>
+                        </div>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    
 
 
     <script src="./script.js"></script>
