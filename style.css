@@ -244,6 +244,93 @@ button{
     border-radius: 50%;
     box-shadow: 0px 0px 12px 0px rgba(46, 45, 45, 0.3);
 }
+/* --------------------------------------aside-informacion del producto- movil------------------------------------------ */
+.container_aside{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.container_ProductInformation_secundary{
+    width: 350px;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0 0 2px 0 gray;
+    top: 1px;
+    
+}
+.img_secundary{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+.logoClose_secundary{
+    position: absolute;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    right: 300px;
+    top: 15px;
+}
+.points_secundary {
+    display: flex;
+    justify-content: center;
+}
+.points_secundary > li {
+    background: var(--very-light-pink);
+    width: 8px;
+    height: 8px;
+    margin: 8px 6px;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+}
+.points_secundary > .active_secundary {
+    background: var(--hospital-green);
+}
+.points_secundary > li:hover {
+    background: var(--hospital-green);
+}
+.information_secundary{
+    margin: 10px 20px;
+}
+.information_secundary h2{
+    font-size: var(--lg);
+    color: var(--black);
+}
+.information_secundary h3{
+    font-size: var(--lg);
+    color: rgb(168, 168, 168);
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+.information_secundary p{
+    font-size: var(--md);
+    color: rgb(168, 168, 168);
+    font-weight: normal;
+    margin: 15px 0 0 0;
+}
+.btn_secundary{
+    width: 310px;
+    margin: 50px 20px 30px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--hospital-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    cursor: pointer;
+}
+.btn_secundary img{
+    width: 50px;
+    height: 50px;
+}
+.btn_secundary p{
+    font-size: var(--lg);
+    color: var(--white);
+    font-weight: bolder;
+}
 /* ---------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -398,7 +485,17 @@ button{
     .containerInformation--product_main{
         margin: 10px 0 0 0;
     }
+    /* ------------------------------------aside- informacion del producto - desktop------------------------------------------- */
+    .container_ProductInformation_secundary{
+    top: 1px;
+    left:990px;
+    }
+    .img_secundary{
+    border-radius: 20px;
+    }
+    .logoClose_secundary{
+    right: 305px;
+    top: 10px;  
+    }
 }
-
-
 
